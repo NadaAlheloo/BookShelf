@@ -1,0 +1,89 @@
+:root {
+  --green: #1f8a3a;
+  --dark: #111;
+  --light: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  padding: 10px;
+}
+
+.header {
+  background: var(--green);
+  color: var(--light);
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.pageLead {
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.bookCard {
+  border: 1px solid var(--dark);
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--light);
+  margin-top: 20px;
+}
+
+.pageTitle {
+  margin-bottom: 10px;
+}
+
+.label{
+  margin-right: 10px;
+}
+
+.btn{
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.input{
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.search-bar, .select-bar{
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 6px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
